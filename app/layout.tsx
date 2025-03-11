@@ -18,8 +18,11 @@ const geistMono = Geist_Mono({
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "CoconutSplit - Split Bills on Telegram",
+  title: "CoconutSplit",
   description: "The easiest way to split bills and expenses with friends on Telegram",
+  icons: {
+    icon: '/coconutsplit-logo-small.png',
+  },
 };
 
 export default function RootLayout({
