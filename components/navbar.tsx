@@ -18,20 +18,22 @@ import {
 import { useState } from "react"
 
 const routes = [
-    { href: "/docs", label: "Docs" },
     { href: "/features", label: "Features" },
+    { href: "/docs", label: "Docs" },
+    { href: "/about", label: "About" },
+
 ]
 
 export function Navbar() {
     const [isOpen, setIsOpen] = useState(false)
 
     return (
-        <header className="sticky top-0 z-40 w-full border-b bg-background">
+        <header className="sticky top-0 z-40 w-full border-b border-muted bg-background">
             <NavigationMenu className="mx-auto">
                 <NavigationMenuList className="container h-14 px-4 w-screen flex justify-between">
                     <NavigationMenuItem className="font-bold flex">
                         <Link href="/" className="flex items-center space-x-2">
-                            <span className="font-bold text-xl">🥥 CoconutSplit</span>
+                            <img src="/logo.png" alt="CoconutSplit Logo" className="h-36 w-36" />
                         </Link>
                     </NavigationMenuItem>
 
@@ -85,7 +87,7 @@ export function Navbar() {
                     </nav>
 
                     <div className="hidden md:flex items-center gap-2">
-                        <Button variant="default" asChild>
+                        <Button variant="secondary" asChild>
                             <Link href="https://t.me/coconutsplit_bot">
                                 Try on Telegram
                             </Link>
