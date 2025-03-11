@@ -86,16 +86,19 @@ export default function DocsPage() {
                     </CardHeader>
                     <CardContent className="space-y-4">
                         <p className="leading-7">
-                            1. Start by using the <code className="relative rounded bg-muted px-[0.3rem] py-[0.2rem] font-mono text-sm">/start</code> command to initialize the bot
+                            1. Add the coconutsplit bot to an existing Telegram group chat. The bot's username is <code className="relative rounded bg-muted px-[0.3rem] py-[0.2rem] font-mono text-sm">@coconutsplit_bot</code>.
                         </p>
                         <p className="leading-7">
-                            2. Create a new group with <code className="relative rounded bg-muted px-[0.3rem] py-[0.2rem] font-mono text-sm">/create_group</code> or join an existing one
+                            2. Start by using the <code className="relative rounded bg-muted px-[0.3rem] py-[0.2rem] font-mono text-sm">/start</code> command to initialize the bot
                         </p>
                         <p className="leading-7">
-                            3. Add expenses using <code className="relative rounded bg-muted px-[0.3rem] py-[0.2rem] font-mono text-sm">/add_expense</code> or upload receipts with <code className="relative rounded bg-muted px-[0.3rem] py-[0.2rem] font-mono text-sm">/upload_receipt</code>
+                            3. Create a new group with <code className="relative rounded bg-muted px-[0.3rem] py-[0.2rem] font-mono text-sm">/create_group</code> or join an existing one
                         </p>
                         <p className="leading-7">
-                            4. Track debts with <code className="relative rounded bg-muted px-[0.3rem] py-[0.2rem] font-mono text-sm">/show_debts</code> and settle them using <code className="relative rounded bg-muted px-[0.3rem] py-[0.2rem] font-mono text-sm">/settle_debt</code>
+                            4. Add expenses using <code className="relative rounded bg-muted px-[0.3rem] py-[0.2rem] font-mono text-sm">/add_expense</code> or upload receipts with <code className="relative rounded bg-muted px-[0.3rem] py-[0.2rem] font-mono text-sm">/upload_receipt</code>
+                        </p>
+                        <p className="leading-7">
+                            5. Track debts with <code className="relative rounded bg-muted px-[0.3rem] py-[0.2rem] font-mono text-sm">/show_debts</code> and settle them using <code className="relative rounded bg-muted px-[0.3rem] py-[0.2rem] font-mono text-sm">/settle_debt</code>
                         </p>
                     </CardContent>
                 </Card>

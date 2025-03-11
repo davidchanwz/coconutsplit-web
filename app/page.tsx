@@ -27,6 +27,7 @@ export default function Home() {
             </Button>
           </div>
         </div>
+        
       </section>
 
       <section className="w-full max-w-6xl px-4 pb-16">

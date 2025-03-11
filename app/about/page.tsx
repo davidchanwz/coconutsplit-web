@@ -22,27 +22,27 @@ export default function AboutPage() {
                         <div className="flex flex-col items-center lg:items-stretch lg:flex-row justify-center gap-24 mt-16">
                             <TeamCard
                                 name="David Chan"
-                                role="Frontend Developer"
+                                role="Backend Developer"
                                 image="/david.jpg"
                                 github="https://github.com/davidchanwz"
                                 linkedin="https://www.linkedin.com/in/davidchanwz/"
-                                description="I love gyat."
+                                description="I love coconut."
                             />
                             <TeamCard
                                 name="Aayush Sharma"
-                                role="Frontend Developer"
+                                role="README Writer"
                                 image="/aayush.jpg"
                                 github="https://github.com/ahhyush"
                                 linkedin="https://www.linkedin.com/in/aayush-sharma-329321208/"
-                                description="I really love gyat."
+                                description="I really love coconut."
                             />
                             <TeamCard
                                 name="Jensen Huang"
-                                role="Backend Developer"
+                                role="DevOps Engineer"
                                 image="/jensen.jpg"
                                 github="https://github.com/jensenhuangyankai"
                                 linkedin="https://www.linkedin.com/in/jensenhyk/"
-                                description="I really really love gyat."
+                                description="I really really love coconut."
                             />
                             <TeamCard
                                 name="Benjamin Koh"
@@ -50,7 +50,7 @@ export default function AboutPage() {
                                 image="/ben.jpg"
                                 github="https://github.com/Ben926"
                                 linkedin="https://www.linkedin.com/in/benjaminkoh926/"
-                                description="I really really really love gyat."
+                                description="I really really really love coconut."
                             />
                             {/* Add more team members as needed */}
                         </div>
