@@ -3,6 +3,7 @@ import Link from "next/link"
 import { Button, buttonVariants } from "@/components/ui/button"
 import { ModeToggle } from "@/components/mode-toggle"
 import { Menu } from "lucide-react"
+import { TelegramIcon } from "@/components/icons/telegram"
 import {
     NavigationMenu,
     NavigationMenuItem,
@@ -66,6 +67,7 @@ export function Navbar() {
                                         className={buttonVariants({ variant: "default" })}
                                         onClick={() => setIsOpen(false)}
                                     >
+                                        <TelegramIcon className="h-4 w-4" />
                                         Try on Telegram
                                     </Link>
                                 </nav>
@@ -89,6 +91,7 @@ export function Navbar() {
                     <div className="hidden md:flex items-center gap-2">
                         <Button variant="secondary" asChild>
                             <Link href="https://t.me/coconutsplit_bot">
+                                <TelegramIcon className="h-4 w-4" />
                                 Try on Telegram
                             </Link>
                         </Button>

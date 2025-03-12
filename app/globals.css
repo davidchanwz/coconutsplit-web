@@ -60,8 +60,8 @@
   --muted-foreground: oklch(0.708 0 0);
   --accent: oklch(0.84 0.187 102.851);
   --accent-foreground: oklch(0.334 0.197 27.073);
-  --destructive: oklch(0.97 0.048 102.473);
-  --destructive-foreground: oklch(0.334 0.197 27.073);
+  --destructive: oklch(0.637 0.237 41.008);    /* #ff5b02 - orange */
+  --destructive-foreground: oklch(0.637 0.237 41.008);    /* #ff5b02 - orange */
   --border: oklch(0.637 0.237 41.008);
   --input: oklch(0.637 0.237 41.008);
   --ring: oklch(0.84 0.187 102.851);
@@ -127,6 +127,18 @@
     @apply bg-background text-foreground;
   }
 }
+  
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+html::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+html {
+  -ms-overflow-style: none; 
+  scrollbar-width: none; 
+}
 
 .gradient-text {
   @apply bg-clip-text text-transparent;
@@ -141,4 +153,10 @@
 .gradient-text-red {
   @apply bg-clip-text text-transparent;
   background-image: linear-gradient(to right, var(--secondary), var(--destructive));
+}
+
+@layer utilities {
+  .data-\[error\=true\]\:text-destructive-foreground[data-error="true"] {
+    color: var(--destructive);
+  }
 }

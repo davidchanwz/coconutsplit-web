@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   title: "CoconutSplit",
   description: "The easiest way to split bills and expenses with friends on Telegram",
   icons: {
-    icon: '/coconutsplit-logo-small.png',
+    icon: '/icon.png',
   },
 };
 
