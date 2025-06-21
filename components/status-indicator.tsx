@@ -40,9 +40,14 @@ export function StatusIndicator({
 export function ServiceStatusCard({ service }: { service: ServiceStatus }) {
     function formatDate(date: Date | null) {
         if (!date) return 'N/A';
-        return new Intl.DateTimeFormat('en-US', {
-            dateStyle: 'medium',
-            timeStyle: 'short'
+        return new Intl.DateTimeFormat('en-SG', {
+            timeZone: 'Asia/Singapore',
+            year: 'numeric',
+            month: 'short',
+            day: 'numeric',
+            hour: '2-digit',
+            minute: '2-digit',
+            hour12: true
         }).format(date);
     }
 

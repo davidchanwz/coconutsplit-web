@@ -63,7 +63,16 @@ export default async function Home() {
                 Status updates every 60 seconds
               </p>
               <p className="text-xs text-muted-foreground/70">
-                Last updated: {new Date().toLocaleString()}
+                Last updated: {new Date().toLocaleString('en-SG', {
+                  timeZone: 'Asia/Singapore',
+                  year: 'numeric',
+                  month: 'short',
+                  day: 'numeric',
+                  hour: '2-digit',
+                  minute: '2-digit',
+                  second: '2-digit',
+                  hour12: true
+                })}
               </p>
             </div>
 
